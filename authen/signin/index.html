@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css"></link> 
+</head>
+
+<body>
+    
+    
+    <form id="login-form">
+        <h1>Sign In</h1>
+        
+        <label><b>Username</b>
+            <br />  <input type="text" id="username" />
+        </label>
+        
+        <br />
+
+        <label><b>Password</b>
+            <br />  <input type="password" id="password" />
+        </label>
+
+        <br />
+        <button type="submit">Log In</button>
+        <br /> 
+        <br /> 
+        <b><a href="/authen/signup/signup.html">Sign Up</a></b>
+    </form>
+
+    <p id="erroir-message"></p> <!-- Error message will be displayed here --> 
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

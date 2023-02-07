@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome!</title>
+</head>
+<body>
+    <h1>Welcome!</h1>
+    <p>You have successfully logged in!</p>
+    <a href="/authen/signin/index.html">Sign Out</a>
+
+    <script> 
+        let token = sessionStorage.getItem("username");
+        console.log(token);
+
+
+        let h1 = document.querySelector("h1");
+        h1.innerHTML += " "; 
+        h1.innerHTML += token;
+
+    </script> 
+</body>
+
+</html>
